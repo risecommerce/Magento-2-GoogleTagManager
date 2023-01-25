@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * PHP version 7 & 8
+ *
+ * @category Risecommerce
+ * @package  Risecommerce_GoogleTagManager
+ * @author   Risecommerce <magento@risecommerce.com>
+ * @license  https://www.risecommerce.com  Open Software License (OSL 3.0)
+ * @link     https://www.risecommerce.com
+ */
+
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="after.body.start">
+          <block class="Risecommerce\GoogleTagManager\Block\GtmCode" name="risecommerce_gtm_iframe" as="risecommerce_gtm_iframe" before="-" template="Risecommerce_GoogleTagManager::iframe.phtml" />
+        </referenceContainer>
+        <referenceBlock name="head.additional">
+            <block class="Risecommerce\GoogleTagManager\Block\DataLayer" name="risecommerce_gtm_datalayer" as="risecommerce_gtm_datalayer" before="-" template="Risecommerce_GoogleTagManager::js.phtml" />
+        </referenceBlock>
+    </body>
+</page>

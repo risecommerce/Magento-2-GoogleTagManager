@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * PHP version 7 & 8
+ *
+ * @category Risecommerce
+ * @package  Risecommerce_GoogleTagManager
+ * @author   Risecommerce <magento@risecommerce.com>
+ * @license  https://www.risecommerce.com  Open Software License (OSL 3.0)
+ * @link     https://www.risecommerce.com
+ */
+
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Customer:etc/sections.xsd">
+    <action name="checkout/cart/add">
+        <section name="risecommerce-gtm-jsdatalayer"/>
+    </action>
+    <action name="checkout/cart/delete">
+        <section name="risecommerce-gtm-jsdatalayer"/>
+    </action>
+    <action name="checkout/cart/updatePost">
+        <section name="risecommerce-gtm-jsdatalayer"/>
+    </action>
+    <action name="checkout/cart/updateItemOptions">
+        <section name="risecommerce-gtm-jsdatalayer"/>
+    </action>
+    <action name="checkout/cart/couponPost">
+        <section name="risecommerce-gtm-jsdatalayer"/>
+    </action>
+    <action name="checkout/cart/estimatePost">
+        <section name="risecommerce-gtm-jsdatalayer"/>
+    </action>
+    <action name="checkout/cart/estimateUpdatePost">
+        <section name="risecommerce-gtm-jsdatalayer"/>
+    </action>
+    <action name="checkout/onepage/saveOrder">
+        <section name="risecommerce-gtm-jsdatalayer"/>
+    </action>
+    <action name="checkout/sidebar/removeItem">
+        <section name="risecommerce-gtm-jsdatalayer"/>
+    </action>
+    <action name="checkout/sidebar/updateItemQty">
+        <section name="risecommerce-gtm-jsdatalayer"/>
+    </action>
+    <action name="rest/*/V1/carts/*/payment-information">
+        <section name="risecommerce-gtm-jsdatalayer"/>
+    </action>
+    <action name="rest/*/V1/guest-carts/*/payment-information">
+        <section name="risecommerce-gtm-jsdatalayer"/>
+    </action>
+    <action name="rest/*/V1/guest-carts/*/selected-payment-method">
+        <section name="risecommerce-gtm-jsdatalayer"/>
+    </action>
+    <action name="rest/*/V1/carts/*/selected-payment-method">
+        <section name="risecommerce-gtm-jsdatalayer"/>
+    </action>
+</config>

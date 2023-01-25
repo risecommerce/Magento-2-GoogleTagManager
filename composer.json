@@ -1,0 +1,47 @@
+{
+    "name": "risecommerce/googletagmanager-extension",
+    "description": "Google Tag Manager for Magento 2 with Advance Data Layer",
+    "type": "magento2-module",
+    "version": "1.0.1",
+    "license": [
+    "OSL-3.0",
+    "AFL-3.0"
+  ],
+    "keywords": [
+        "magento 2",
+        "gtm",
+        "tag Manager",
+        "google analytics",
+        "magento gtm",
+        "magento2 analytics",
+        "ga tag manager",
+        "google tag manager",
+        "ga",
+        "data layer",
+        "magento2",
+        "magento tag manager",
+        "risecloude",
+        "risecommerce"
+    ],
+    "minimum-stability": "dev",
+    "authors": [
+        {
+          "name": "Risecommerce",
+          "email": "support@risecommerce.com",
+          "homepage": "https://www.risecommerce.com",
+          "role": "Technical Support"
+        }
+      ],
+    "require": {
+        "php": "7.0.2|7.0.4|~7.0.6|~7.1.0|~7.1.3|~7.2.0|~7.3.0|~7.4.0|~8.1.0"
+         },
+   
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Risecommerce\\GoogleTagManager\\": ""
+        }
+    }
+}
